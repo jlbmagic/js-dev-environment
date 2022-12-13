@@ -6,13 +6,13 @@
   "description": "a generic development environment for developing JS in FileMaker",
   "scripts": {
     "start": "parcel index.html  --no-source-maps",
-    "browserslist": "> 0.5%, last 2 versions, not dead",
     "build": "parcel build index.html",
     "upload": "node ./scripts/upload",
     "deploy-to-fm": "npm run build && npm run upload",
     "openfile": "node ./scripts/openFileOnServer",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
