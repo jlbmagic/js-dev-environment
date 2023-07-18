@@ -2,7 +2,7 @@
   "name": "js-dev-environment",
   "version": "2.0.0",
   "author": "jeremy@integratingmagic.io",
-  "license": "ISC",
+  "license": "MIT",
   "description": "a generic development environment for developing JS in FileMaker",
   "scripts": {
     "start": "parcel index.html  --no-source-maps",
