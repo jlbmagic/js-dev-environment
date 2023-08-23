@@ -1,6 +1,6 @@
 {
-  "name": "js-dev-environment",
-  "version": "2.0.0",
+  "name": "js-dev-env",
+  "version": "2.1.0",
   "author": "jeremy@integratingmagic.io",
   "license": "MIT",
   "description": "a generic development environment for developing JS in FileMaker",
@@ -19,5 +19,8 @@
     "open": "^8.2.1",
     "parcel": "^2.8.1",
     "prettier": "2.6.2"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
   }
 }

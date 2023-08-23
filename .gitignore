@@ -3,4 +3,4 @@ node_modules
 dist
 import.log
 .parcel-cache
-.DS_Store
+.DS_Store'
