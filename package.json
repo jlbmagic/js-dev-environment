@@ -6,11 +6,10 @@
   "description": "a generic development environment for developing JS in FileMaker",
   "scripts": {
     "start": "parcel index.html  --no-source-maps",
-    "build": "parcel build index.html",
-    "upload": "node ./scripts/upload",
+    "reload": "node ./scripts/reload-dev",
     "deploy-to-fm": "npm run build && npm run upload",
-    "openfile": "node ./scripts/openFileOnServer",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build index.html",
+    "upload": "node ./scripts/upload"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {

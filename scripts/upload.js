@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 const config = require("../widget.config");
 
 const { widgetName, uploadScript, file, server } = config;
