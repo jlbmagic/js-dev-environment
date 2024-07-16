@@ -4,4 +4,5 @@ module.exports = {
   file: "jsDev",
   uploadScript: "UploadToHTML",
   reloadScript: "Load Widget",
+  startDevScript: "Set to Dev Mode",
 };

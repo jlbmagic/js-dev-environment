@@ -7,9 +7,13 @@
   "scripts": {
     "start": "parcel index.html  --no-source-maps",
     "reload": "node ./scripts/reload-dev",
-    "deploy-to-fm": "npm run build && npm run upload",
+    "deploy-to-fm": "npm run clear-cache && npm run build && npm run upload",
     "build": "parcel build index.html",
-    "upload": "node ./scripts/upload"
+    "upload": "node ./scripts/upload",
+    "clear-cache": "rm -rf .parcel-cache dist",
+    "reset-dev": "npm run clear-cache && npm run start",
+    "start-fm-dev": "node ./scripts/start-fm-dev",
+    "open-dev-browser": "open http://localhost:1234"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
