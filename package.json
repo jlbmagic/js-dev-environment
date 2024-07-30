@@ -1,23 +1,26 @@
 {
-  "name": "js-dev-environment",
-  "version": "2.0.0",
-  "description": "a generic development enviornment for developing JS in FileMaker",
+  "name": "js-dev-env",
+  "version": "2.1.0",
+  "author": "jeremy@integratingmagic.io",
+  "license": "MIT",
+  "description": "a generic development environment for developing JS in FileMaker",
   "scripts": {
     "start": "parcel index.html  --no-source-maps",
-    "browserslist": "> 0.5%, last 2 versions, not dead",
+    "reload": "node ./scripts/reload-dev",
+    "deploy-to-fm": "npm run clear-cache && npm run build && npm run upload",
     "build": "parcel build index.html",
     "upload": "node ./scripts/upload",
-    "build:upload": "npm run build && npm run upload",
-    "openfile": "node ./scripts/openFileOnServer",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clear-cache": "rm -rf .parcel-cache dist",
+    "reset-dev": "npm run clear-cache && npm run start",
+    "start-fm-dev": "node ./scripts/start-fm-dev",
+    "open-dev-browser": "open http://localhost:1234"
   },
-  "author": "jeremy@integratingmagic.io",
-  "license": "ISC",
-  "dependencies": {
-    "fm-webviewer-fetch": "^1.1.0",
-    "parcel": "^2.0.1"
-  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
-    "open": "^8.2.1"
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "open": "^8.2.1",
+    "parcel": "^2.8.1",
+    "prettier": "2.6.2"
   }
 }
